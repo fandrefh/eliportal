@@ -4,35 +4,91 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.9~svn20110310	//
-ALLOWED_HOSTS	../settings.py	/^ALLOWED_HOSTS = []$/;"	kind:variable	line:28
-AUTH_PASSWORD_VALIDATORS	../settings.py	/^AUTH_PASSWORD_VALIDATORS = [$/;"	kind:variable	line:87
-BASE_DIR	../settings.py	/^BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))$/;"	kind:variable	line:16
-DATABASES	../settings.py	/^DATABASES = {$/;"	kind:variable	line:76
-DEBUG	../settings.py	/^DEBUG = True$/;"	kind:variable	line:26
-INSTALLED_APPS	../settings.py	/^INSTALLED_APPS = [$/;"	kind:variable	line:33
-LANGUAGE_CODE	../settings.py	/^LANGUAGE_CODE = 'en-us'$/;"	kind:variable	line:106
-MIDDLEWARE	../settings.py	/^MIDDLEWARE = [$/;"	kind:variable	line:42
+0001_initial.py	../publisher/migrations/0001_initial.py	1;"	kind:file	line:1
+0002_auto_20171114_1924.py	../publisher/migrations/0002_auto_20171114_1924.py	1;"	kind:file	line:1
+0003_auto_20171114_1927.py	../publisher/migrations/0003_auto_20171114_1927.py	1;"	kind:file	line:1
+ALLOWED_HOSTS	../settings.py	/^ALLOWED_HOSTS = []$/;"	kind:variable	line:29
+AUTH_PASSWORD_VALIDATORS	../settings.py	/^AUTH_PASSWORD_VALIDATORS = [$/;"	kind:variable	line:96
+BASE_DIR	../settings.py	/^BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))$/;"	kind:variable	line:17
+Category	../publisher/models.py	/^class Category(models.Model):$/;"	kind:class	line:8
+CategorySerializer	../publisher/serializers.py	/^class CategorySerializer(serializers.ModelSerializer):$/;"	kind:class	line:6
+DATABASES	../settings.py	/^DATABASES = {$/;"	kind:variable	line:81
+DEBUG	../settings.py	/^DEBUG = config('DEBUG', default=False, cast=bool)$/;"	kind:variable	line:27
+INSTALLED_APPS	../settings.py	/^INSTALLED_APPS = [$/;"	kind:variable	line:34
+LANGUAGE_CODE	../settings.py	/^LANGUAGE_CODE = 'en-us'$/;"	kind:variable	line:115
+MIDDLEWARE	../settings.py	/^MIDDLEWARE = [$/;"	kind:variable	line:47
+Meta	../publisher/models.py	/^    class Meta:$/;"	kind:class	line:13
+Meta	../publisher/models.py	/^    class Meta:$/;"	kind:class	line:29
+Meta	../publisher/serializers.py	/^    class Meta:$/;"	kind:class	line:7
+Migration	../publisher/migrations/0001_initial.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:9
+Migration	../publisher/migrations/0002_auto_20171114_1924.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:10
+Migration	../publisher/migrations/0003_auto_20171114_1927.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:8
+Post	../publisher/models.py	/^class Post(models.Model):$/;"	kind:class	line:22
 PublisherConfig	../publisher/apps.py	/^class PublisherConfig(AppConfig):$/;"	kind:class	line:4
-ROOT_URLCONF	../settings.py	/^ROOT_URLCONF = 'eliportal.urls'$/;"	kind:variable	line:52
-SECRET_KEY	../settings.py	/^SECRET_KEY = '8^8y0n0rlun-@+pkddmb5hsg_njt%6@ao%nd0wm4fds^p5ua9z'$/;"	kind:variable	line:23
-STATIC_URL	../settings.py	/^STATIC_URL = '\/static\/'$/;"	kind:variable	line:120
-TEMPLATES	../settings.py	/^TEMPLATES = [$/;"	kind:variable	line:54
-TIME_ZONE	../settings.py	/^TIME_ZONE = 'UTC'$/;"	kind:variable	line:108
-USE_I18N	../settings.py	/^USE_I18N = True$/;"	kind:variable	line:110
-USE_L10N	../settings.py	/^USE_L10N = True$/;"	kind:variable	line:112
-USE_TZ	../settings.py	/^USE_TZ = True$/;"	kind:variable	line:114
-WSGI_APPLICATION	../settings.py	/^WSGI_APPLICATION = 'eliportal.wsgi.application'$/;"	kind:variable	line:70
+ROOT_URLCONF	../settings.py	/^ROOT_URLCONF = 'eliportal.urls'$/;"	kind:variable	line:57
+SECRET_KEY	../settings.py	/^SECRET_KEY = config('SECRET_KEY')$/;"	kind:variable	line:24
+STATIC_URL	../settings.py	/^STATIC_URL = '\/static\/'$/;"	kind:variable	line:129
+TEMPLATES	../settings.py	/^TEMPLATES = [$/;"	kind:variable	line:59
+TIME_ZONE	../settings.py	/^TIME_ZONE = 'UTC'$/;"	kind:variable	line:117
+USE_I18N	../settings.py	/^USE_I18N = True$/;"	kind:variable	line:119
+USE_L10N	../settings.py	/^USE_L10N = True$/;"	kind:variable	line:121
+USE_TZ	../settings.py	/^USE_TZ = True$/;"	kind:variable	line:123
+WSGI_APPLICATION	../settings.py	/^WSGI_APPLICATION = 'eliportal.wsgi.application'$/;"	kind:variable	line:75
 __init__.py	../__init__.py	1;"	kind:file	line:1
 __init__.py	../publisher/__init__.py	1;"	kind:file	line:1
 __init__.py	../publisher/migrations/__init__.py	1;"	kind:file	line:1
+__str__	../publisher/models.py	/^    def __str__(self):$/;"	kind:member	line:19
+__str__	../publisher/models.py	/^    def __str__(self):$/;"	kind:member	line:35
 admin.py	../publisher/admin.py	1;"	kind:file	line:1
 application	../wsgi.py	/^application = get_wsgi_application()$/;"	kind:variable	line:16
 apps.py	../publisher/apps.py	1;"	kind:file	line:1
+category	../publisher/models.py	/^    category = models.ForeignKey(Category, verbose_name=_('Categoria'))$/;"	kind:variable	line:26
+category_list	../publisher/views.py	/^def category_list(request):$/;"	kind:function	line:14
+db_table	../publisher/models.py	/^        db_table = 'categories'$/;"	kind:variable	line:14
+db_table	../publisher/models.py	/^        db_table = 'posts'$/;"	kind:variable	line:30
+dependencies	../publisher/migrations/0001_initial.py	/^    dependencies = [$/;"	kind:variable	line:13
+dependencies	../publisher/migrations/0002_auto_20171114_1924.py	/^    dependencies = [$/;"	kind:variable	line:12
+dependencies	../publisher/migrations/0003_auto_20171114_1927.py	/^    dependencies = [$/;"	kind:variable	line:10
+description	../publisher/models.py	/^    description = models.TextField(_('Descrição'), blank=True)$/;"	kind:variable	line:10
+field	../publisher/migrations/0002_auto_20171114_1924.py	/^            field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='publisher.Category', verbose_name='Categoria'),$/;"	kind:variable	line:40
+fields	../publisher/migrations/0001_initial.py	/^            fields=[$/;"	kind:variable	line:19
+fields	../publisher/migrations/0002_auto_20171114_1924.py	/^            fields=[$/;"	kind:variable	line:19
+fields	../publisher/serializers.py	/^        fields = '__all__'$/;"	kind:variable	line:9
+initial	../publisher/migrations/0001_initial.py	/^    initial = True$/;"	kind:variable	line:11
+model	../publisher/serializers.py	/^        model = Category$/;"	kind:variable	line:8
+model_name	../publisher/migrations/0002_auto_20171114_1924.py	/^            model_name='post',$/;"	kind:variable	line:38
 models.py	../publisher/models.py	1;"	kind:file	line:1
-name	../publisher/apps.py	/^    name = 'publisher'$/;"	kind:variable	line:5
+name	../publisher/apps.py	/^    name = 'eliportal.publisher'$/;"	kind:variable	line:5
+name	../publisher/migrations/0001_initial.py	/^            name='Category',$/;"	kind:variable	line:18
+name	../publisher/migrations/0002_auto_20171114_1924.py	/^            name='Post',$/;"	kind:variable	line:18
+name	../publisher/migrations/0002_auto_20171114_1924.py	/^            name='category',$/;"	kind:variable	line:34
+name	../publisher/migrations/0002_auto_20171114_1924.py	/^            name='category',$/;"	kind:variable	line:39
+name	../publisher/migrations/0003_auto_20171114_1927.py	/^            name='category',$/;"	kind:variable	line:16
+name	../publisher/models.py	/^    name = models.CharField(_('Nome'), max_length=100)$/;"	kind:variable	line:9
+operations	../publisher/migrations/0001_initial.py	/^    operations = [$/;"	kind:variable	line:16
+operations	../publisher/migrations/0002_auto_20171114_1924.py	/^    operations = [$/;"	kind:variable	line:16
+operations	../publisher/migrations/0003_auto_20171114_1927.py	/^    operations = [$/;"	kind:variable	line:14
+options	../publisher/migrations/0001_initial.py	/^            options={$/;"	kind:variable	line:25
+options	../publisher/migrations/0002_auto_20171114_1924.py	/^            options={$/;"	kind:variable	line:26
+options	../publisher/migrations/0003_auto_20171114_1927.py	/^            options={'ordering': ['name'], 'verbose_name': 'Categoria', 'verbose_name_plural': 'Categorias'},$/;"	kind:variable	line:17
+ordering	../publisher/models.py	/^        ordering = ['id']$/;"	kind:variable	line:33
+ordering	../publisher/models.py	/^        ordering = ['name']$/;"	kind:variable	line:17
+photo	../publisher/models.py	/^    photo = models.ImageField(_('Foto'), upload_to='images')$/;"	kind:variable	line:25
+post_text	../publisher/models.py	/^    post_text = models.TextField(_('Texto'))$/;"	kind:variable	line:24
+serializers.py	../publisher/serializers.py	1;"	kind:file	line:1
 settings.py	../settings.py	1;"	kind:file	line:1
+slug	../publisher/models.py	/^    slug = AutoSlugField(populate_from='name', unique=True)$/;"	kind:variable	line:11
+slug	../publisher/models.py	/^    slug = AutoSlugField(populate_from='title', unique=True)$/;"	kind:variable	line:27
+table	../publisher/migrations/0002_auto_20171114_1924.py	/^            table='categories',$/;"	kind:variable	line:35
 tests.py	../publisher/tests.py	1;"	kind:file	line:1
-urlpatterns	../urls.py	/^urlpatterns = [$/;"	kind:variable	line:19
+title	../publisher/models.py	/^    title = models.CharField(_('Título'), max_length=100)$/;"	kind:variable	line:23
+urlpatterns	../publisher/urls.py	/^urlpatterns = [$/;"	kind:variable	line:5
+urlpatterns	../urls.py	/^urlpatterns = [$/;"	kind:variable	line:21
+urls.py	../publisher/urls.py	1;"	kind:file	line:1
 urls.py	../urls.py	1;"	kind:file	line:1
+verbose_name	../publisher/models.py	/^        verbose_name = 'Categoria'$/;"	kind:variable	line:15
+verbose_name	../publisher/models.py	/^        verbose_name = 'Post'$/;"	kind:variable	line:31
+verbose_name_plural	../publisher/models.py	/^        verbose_name_plural = 'Categorias'$/;"	kind:variable	line:16
+verbose_name_plural	../publisher/models.py	/^        verbose_name_plural = 'Posts'$/;"	kind:variable	line:32
 views.py	../publisher/views.py	1;"	kind:file	line:1
 wsgi.py	../wsgi.py	1;"	kind:file	line:1
