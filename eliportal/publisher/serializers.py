@@ -3,7 +3,7 @@ from rest_framework import serializers
 from .models import Category, Post
 
 
-class CategorySerializer(serializers.ModelSerializer):
+class CategorySerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Category
         fields = '__all__'

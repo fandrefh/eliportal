@@ -16,9 +16,12 @@ Including another URLconf
 from django.conf.urls import url, include
 from django.contrib import admin
 
+from rest_framework_jwt.views import obtain_jwt_token
+
 from eliportal.publisher import urls as publisher_urls
 
 urlpatterns = [
     url(r'^api/v1/', include(publisher_urls)),
+    url(r'^api-token-auth/', obtain_jwt_token),
     url(r'^admin/', admin.site.urls),
 ]

@@ -8,12 +8,19 @@ from rest_framework.response import Response
 # from rest_framework.renderers import JSONRenderer
 # from rest_framework.parsers import JSONParser
 
+# from rest_framework.authentication import SessionAuthentication, BasicAuthentication
+# from rest_framework.permissions import IsAuthenticated
+
 from .models import Category, Post
 from .serializers import CategorySerializer, PostSerializer
 
 # Create your views here.
 
 class CategoryList(generics.ListCreateAPIView):
+    # authentication_classes = (
+    #     TokenAuthentication)
+    # permission_classes = (IsAuthenticated,)
+
     queryset = Category.objects.all()
     serializer_class = CategorySerializer
     name = 'category-list'

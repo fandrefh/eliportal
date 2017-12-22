@@ -10,7 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/1.11/ref/settings/
 """
 
-import os
+import os, datetime
 from decouple import config
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -127,3 +127,22 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_URL = '/static/'
+
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': (
+        'rest_framework.permissions.IsAuthenticated',
+    ),
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework_jwt.authentication.JSONWebTokenAuthentication',
+        'rest_framework.authentication.SessionAuthentication',
+        'rest_framework.authentication.BasicAuthentication',
+        'rest_framework.authentication.TokenAuthentication',
+    ),
+}
+
+JWT_AUTH = {
+    'JWT_LEEWAY': 30,
+    'JWT_ALGORITHM': 'HS256',
+    #'JWT_PRIVATE_KEY': 'hostess', #s(klsopw$jpguk@rq#)%3af3&+4v-6n=gn7#fsk!@9kbri_#mv
+    'JWT_EXPIRATION_DELTA': datetime.timedelta(seconds=86400000),
+}
